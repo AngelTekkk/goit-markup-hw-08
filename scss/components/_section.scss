@@ -1,0 +1,46 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+        &--benefit {
+            padding-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.1787;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: $title-color;
+
+        &--visually-hidden {
+            @extend %visually-hidden;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 36px;
+            line-height: 1.1668;
+            margin-bottom: 50px;
+        }
+    }
+
+    &--our-work {
+        display: none;
+
+        @media screen and (min-width: $desktop) {
+            display: block;
+        }
+    }
+
+    &--bg {
+        background-color: $second-bg-color;
+    }
+}
